@@ -80,6 +80,7 @@ body{
     background-color: var(--off-wht);
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23eeede7' fill-opacity='0.61'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
     background-attachment: fixed;
+    position: relative;
 }
 
 /* SKIP LINK STYLES */
@@ -243,6 +244,9 @@ p{
     height: 1rem;
     width: 1rem;
     border-radius: 50%;
+    position: relative;
+    top: -45px;
+    left: -30px;
 }
 
 #notifications span.none{
@@ -285,6 +289,9 @@ main > section{
     height: 40px;
     width: 40px;
     /* TO DO: These stars show whether a friend is on the user's list of favorites. We want to position it so that it displays 25 pixels above and 175 pixels to the left of its normal position on the page */
+    position: relative;
+    top: -25px;
+    left: -175px;
     
     border: 1px solid var(--lt-gray);
 }
@@ -385,6 +392,9 @@ main > section{
     width: 44px;
     height: 44px;
     /* TO DO: A link back to the top of a longer page is commonly included near the lower right-hand corner of the page and it will stay in that location as the screen width changes. Use the calc function to move this element down by 100% of the viewport height minus 85 pixels, and to the right by 100% of the viewport width minus 100 pixels */
+    position: fixed;
+    top: calc(100vh - 85px);
+    left: calc(100vw - 100px);
     
     background-color: var(--off-wht);
     border-radius: 1rem;
